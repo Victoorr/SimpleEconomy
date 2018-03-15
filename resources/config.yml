@@ -1,0 +1,83 @@
+Geral:
+  # Esta é a prefixo que ficará no /money top
+  # quando o jogador for o primeiro na posição.
+  TopMagnataTag: "&a[Magnata]"
+  # Qual o tamanho que deseja que seja
+  # o /money top ?
+  TopTamanho: 5
+  # Com quanto de money deseja que um novo
+  # jogador comece?
+  ComecarCom: 0
+  # Tempo para atualizar o money top (segundos) // 300+ é o recomendado
+  AtualiarTop: 300
+  # Deseja usar nosso sistema de magnata? (ele é bem básico)
+  Magnata: true
+
+Mensagens:
+  SemPermissao: "&cVocê não tem permissão para executar este comando."
+  EsteJogadorEVoce: "&cEste jogador é você!"
+  AddArgumento: "&cUse '/money add <jogador> <quantia>' para adicionar coins á um jogador."
+  PayArgumento: "&cUse '/money pay <jogador> <quantia>' para enviar coins á um jogador."
+  RemoveArgumento: "&cUe '/money remove <jogador> <quantia>' para remover coins de um jogador."
+  SetArgumento: "&cUse '/money set <jogador> <quantia>' para setar coins á um jogador."
+  SaldoVer: "&eVocê possui ${valor} coins"
+  SaldoVerOutroJogador: "&e{player} possui ${valor} coins"
+  SaldoInsuficiente: "&cVocê não possui saldo suficiente para isso!"
+  SaldoEnviado: "&eVocê enviou {valor} para {player}"
+  SaldoRecebido: "&eVocê recebeu {valor} de {player}"
+  SaldoRemovido: "&eVocê removeu {valor} de {player}"
+  SaldoSetado: "&eVocê setou o money de {player} para {valor}"
+  JogadorDesabilitouRecebimento: "&c{player} desabilitou o recebimento de coins."
+  JogadorNaoPossuiValor: "&cEste jogador não tem saldo suficiente para você remover."
+  JogadorNaoEncontrado: "&cJogador não encontrado ou não existe."
+  ValorPrecisaSerNumero: "&cA quantia precisa ser um número válido!"
+  ValorPrecisaSerMaiorQueZero: "&cA quantia precisa ser maior que zero."
+  ValorAdicionado: "&eVocê adicionou {valor} para {player}"
+  ToggleAtivado: "&eVocê ATIVOU o recebimento de coins!"
+  ToggleDesativado: "&eVocê DESATIVOU o recebimento de coins!"
+  TopPrefixo:
+  - ''
+  - ''
+  TopFormato: " &f{posicao}° {magnata} {preffixo} {player} &7- ({valor} coins)"
+  ListaDeAjuda:
+  - ''
+  - ' &e/money top &8- &7Top 10 jogadores mais rico'
+  - ' &e/money add &8- &7Adicionar money pra um jogador'
+  - ' &e/money set &8- &7Definir money pra um jogador'
+  - ' &e/money remove &8- &7Remover money de um jogador'
+  - ' &e/money toggle &8- &7Ativar/desativar recebimento de coins'
+  - ' &e/money convert &8- &7Converter money de outro plugin'
+  - ' &e/money pay &8- &7Enviar coins pra um jogador'
+  - ' &e/money help &8- &7Comandos do plugin'
+  - ''
+  
+Magnata:
+  Mensagens:
+    # {magnata} = Magnata atual
+    Entrou: "&2[Magnata] {magnata} &aentrou no servidor"
+    Saiu: "&2[Magnata] {magnata} &asaiu do servidor"
+    Magnata: "&2{magnata} &aé o magnata atual!"
+  Config:
+    # Configure as mensagens "true" pra ativar
+    # e "false" para desativar.
+    Entrou: true
+    Saiu: true
+    Novo: true
+    # Tag que aparecerá no chat
+    Tag: "&2[$] "
+
+SQL:
+  Use: false
+  Host: 192.0.0.1
+  User: "v_kills"
+  DB: "v_kills"
+  Password: '28n2waw923m'
+  Port: 3306
+  
+Convert:
+  Host: 192.0.0.1
+  User: "v_kills"
+  DB: "v_kills"
+  Password: '28n2waw923m'
+  Port: 3306'
+  Table: 'v_kills'
